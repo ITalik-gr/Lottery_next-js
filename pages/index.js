@@ -1,5 +1,8 @@
 
-import ManualHeader from '@/components/ManualHeader'
+import { Inter } from 'next/font/google'
+import Head from 'next/head'
+// import ManualHeader from '@/components/ManualHeader'
+import Header from '@/components/Header'
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -10,7 +13,9 @@ export default function Home() {
       <Head>  
           <title>Hello Title</title>
       </Head>
-    <ManualHeader></ManualHeader>
+      
+      <Header />
+      {/* <ManualHeader /> */}
     </div>
   )
 }
